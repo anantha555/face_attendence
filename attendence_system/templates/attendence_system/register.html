@@ -1,0 +1,49 @@
+{% extends "attendence_system/home.html" %}
+{% block title %}Register Employee{% endblock %}
+{% block content %}
+
+
+<div class="row">
+
+	<div class="col-md-12" style="margin-top: 20px;;">
+		   <h2>Register Employee</h2>
+  			<p>Registration Form Below</p>
+    </div>
+
+	<div class="col-md-3">
+		<div class="card card-body">
+			<a class="btn btn-warning" href="{% url 'dashboard' %}"> &#8592; Back to Home</a>
+			<hr>
+			<h3 style="text-align: center">Register</h3>
+			<hr>
+
+		</div>
+	</div>
+	<div class="col-md-9">
+		<div class="card card-body">
+			<h3 class="p-3 mb-2 ">
+			  New Registration !
+				<br>
+			  <small class="text-muted">Fill the below form</small>
+			</h3>
+			<div>
+				<form action="/action_page.php" method="get" target="#">
+				  <label for="lname">Employee ID:</label><br><br>
+				  <input type="text"  name="eid"><br><br>
+
+				  <label for="fname">First name:</label><br><br>
+				  <input type="text" id="fname" name="fname"><br><br>
+
+				  <label for="lname">Last name:</label><br><br>
+				  <input type="text" id="lname" name="lname"><br><br>
+
+				  <label for="lname">Email ID:</label><br><br>
+				  <input type="text"  name="emid"><br><br>
+
+				  <input type="submit" value="Submit"><br><br>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

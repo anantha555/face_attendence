@@ -1,0 +1,11 @@
+{% extends "attendence_system/home.html" %}
+{% block title %}Log-in{% endblock %}
+{% block content %}
+  <h1>Log-in</h1>
+  <p>Please, use the following form to log-in hear1:</p>
+  <form method="post">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <p><input type="submit1" class="btn btn-primary" value="Log in"></p>
+  </form>
+{% endblock %}
