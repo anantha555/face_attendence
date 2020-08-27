@@ -8,6 +8,5 @@ class EmployeePresence(models.Model):
     present = models.BooleanField(default=True)
     Employee_work = models.ForeignKey(EmployeeWork, on_delete=models.CASCADE)
     date = models.DateField(auto_now=True)
-    status = models.BooleanField(default=False)  # when administrators empty the absents it changes to True and won't
     # appear in the least again
 # Create your models here.
